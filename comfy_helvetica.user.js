@@ -1,6 +1,7 @@
 // ==UserScript==
 // @name           Comfy Helvetica
-// @namespace      news.ycombinator.com/*
+// @namespace      https://github.com/adsahay/Comfy-Helvetica-style-for-HN
+// @include        http://news.ycombinator.com/*
 // @description    Better CSS for Hacker News
 // ==/UserScript==
 
