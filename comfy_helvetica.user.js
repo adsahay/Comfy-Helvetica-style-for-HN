@@ -9,81 +9,103 @@
 
 	function hn_style() {
 	
-		var style = "html {"+
-		"  zoom:1.32;"+
-		"}"+
-		"body * {"+
-		"  font-family:'Helvetica Neue', Helvetica, 'Liberation Sans', sans-serif !important;"+
-		"}"+
-		"code {"+
-		"  font-size:10px;"+
-		"}"+
-		"img {"+
-		"  zoom:.76;"+
-		"}"+
-		"td[style='width:18px;padding-right:4px'] a[href='http://ycombinator.com']:after{"+
-		"  content:\"Y\";"+
-		"  font-family:Tahoma;"+
-		"  position:absolute;"+
-		"  top:3.5em;"+
-		"  left:0;"+
-		"  color:#fff;"+
-		"  background:#f60;"+
-		"  padding:1px 6px;"+
-		"}"+
-		"img[src='http://ycombinator.com/images/y18.gif'] {"+
-		"  display:none;"+
-		"  position:relative;"+
-		"  top:4.2em;"+
-		"  right:3em;"+
-		"  height:36px !important;"+
-		"  width:36px !important;"+
-		"}"+
-		"center a img {"+
-		"  position:relative;"+
-		"  top:-.2em;"+
-		"}"+
-		"a[href=news] {"+
-		"  margin-right:2em;"+
-		"  margin-left:-2.25em;"+
-		"  zoom:.76;"+
-		"  font-size:2.87em;"+
-		"  font-weight:200;"+
-		"  letter-spacing:-1px;"+
-		"  line-height:9px;"+
-		"  color:#333 !important;"+
-		"  text-shadow:rgba(255,255,255,.5) -1px -1px 25px, #f6f6ef -1px 0, #f6f6ef -2px -1px, #f6f6ef -3px -2px, #f6f6ef -4px -3px, #f6f6ef -5px -4px, #f6f6ef -6px -5px, #f6f6ef -7px -6px, #f6f6ef -8px -7px, #f6f6ef -9px -8px, #f6f6ef -10px -9px, #f6f6ef -11px -10px, #f6f6ef -12px -11px, #f6f6ef -13px -12px, #f6f6ef -14px -13px, #f6f6ef -15px -14px, #f6f6ef -16px -15px, #f6f6ef -17px -16px, #f6f6ef -18px -17px, #f6f6ef -19px -18px, #f6f6ef -20px -19px, #f6f6ef -21px -20px, #f6f6ef -22px -21px, #f6f6ef -23px -22px, #f6f6ef -24px -23px, #f6f6ef -25px -24px, #f6f6ef -26px -25px, #f6f6ef -27px -26px, #f6f6ef -28px -27px, #f6f6ef -29px -28px, #f6f6ef -30px -29px, #f6f6ef -31px -30px, #f6f6ef -32px -31px, #f6f6ef -33px -32px, #f6f6ef -34px -33px, #f6f6ef -35px -34px, #f6f6ef -36px -35px;"+
-		"}"+
-		"td[bgcolor] {"+
-		"  padding-top:.5em;"+
-		"  padding-bottom:1em;"+
-		"}"+
-		"a:link, span.comment > font {"+
-		"  color:#222 !important;"+
-		"}"+
-		"td.title[align=right] {"+
-		"  padding:.2em;"+
-		"  font-weight:200;"+
-		"}"+
-		"td.default div {"+
-		"  word-spacing: -2px;"+
-		"}"+
-		"span.comhead, a[href=news], code {"+
-		"  font-family:Menlo, monospace !important;"+
-		"}"+
-		"span.pagetop {"+
-		"  color:#bbb !important;"+
-		"  font-size:.8em !important;"+
-		"}"+
-		"input[type=submit] {"+
-		"  color:#fff !important;"+
-		"  background-color:#f60;"+
-		"  border:none;"+
-		"}"+
-		"td[bgcolor='#ff6600'] {"+
-		"  background:white!important;"+
-		"}";
-		
+		var style = "html {zoom:1.32;}" + 
+			"img, a[href=news] {zoom:.76;}" +
+			"body * {font-family:'Helvetica Neue', Helvetica," +
+			"	   'Liberation Sans', sans-serif !important;}" +
+			"code {font:10px/1.5 Menlo, monospace !important;}" +
+			"a:link {color:#222 !important;}" +
+			"form {padding:0 1em;}" +
+			"td[style='width:18px;padding-right:4px'] " +
+			"a[href='http://ycombinator.com']:after {" +
+			"  content:'Y';" +
+			"  font-family:Tahoma;" +
+			"  position:relative;" +
+			"  top:3.2em;" +
+			"  left:-1.55em;" +
+			"  color:#fff;" +
+			"  background:#f60 -moz-linear-gradient(right, #f60 80%, #c50 100%); " +			
+			"  background:#f60 -webkit-gradient(linear, 0% 0%, 100% 0%," +
+			"			 color-stop(.8, #f60), color-stop(1, #c50));" +
+			"  border-right:#a40 solid 1px;" +
+			"  padding:1px 6px;" +
+			"} " +
+			"img[src='http://ycombinator.com/images/y18.gif'] {" +
+			"  display:none;" +
+			"  position:relative;" +
+			"  top:4.2em;" +
+			"  right:3em;" +
+			"  height:36px !important;" +
+			"  width:36px !important;" +
+			"} " +
+			"a[href=news] {" +
+			"  font-size:1.45em;" +
+			"  line-height:9px;" +
+			"  letter-spacing:-1px;" +
+			"  margin-right:2em;" +
+			"  margin-left:-.75em;" +
+			"  color:#333 !important;" +
+			"  text-shadow:#f6f6ef -1px 0 0;" +
+			"  font-weight:200;" +
+			"} " +
+			"td[bgcolor] {" +
+			"  padding-top:1em;" +
+			"  padding-bottom:1em;" +
+			"} " +
+			"td[bgcolor='#ff6600'], td[bgcolor='#ffffff'] {" +
+			"  background-image: -moz-linear-gradient(bottom, #f6f6ef 28%, #fff 72%); "+
+			"  background-image: -webkit-gradient(linear, 0% 100%, 0% 0%, color-stop(0.28, #f6f6ef), color-stop(0.72, #fff));} " +
+			"center>table>tbody>tr>td>center {" +
+			"  background-image: -moz-linear-gradient(bottom, #fff, #f6f6ef); "+
+			"  background-image: -webkit-gradient(linear, 0% 100%, 0% 0%, color-stop(0, #fff), color-stop(0.2, #f6f6ef));} " +
+			".topsel a {" +
+			"  color:#222 !important;" +
+			"  font-weight:600;" +
+			"} " +
+			"span.pagetop {" +
+			"  color:#bbb !important;" +
+			"  font-size:.8em !important;" +
+			"} " +
+			"span.pagetop b {" +
+			"  font-size:2em;" +
+			"  font-weight:normal;" +
+			"} " +
+			"td.title a:visited {text-shadow:#fff 0px 1px 2px;} " +
+			"td.title[align=right] {" +
+			"  padding:.22em .1em 0 1em;" +
+			"  font-weight:200;" +
+			"  font-size:.62em !important;" +
+			"} " +
+			"center a img {" +
+			"  position:relative;" +
+			"  top:-.2em;" +
+			"  padding:3px 4px;" +
+			"  margin:0 2px;" +
+			"} " +
+			"center>a img:hover {background:#fff;} " +
+			"center>font[color='#ff6600'] {" +
+			"  padding:3px 4px;" +
+			"  margin:0 2px;" +
+			"  position:relative;" +
+			"  top:.8em;" +
+			"} " +
+			"td.default div {margin-top:.7em !important;} " +
+			".comhead {font-weight:300;}" +
+			".comhead a {font-weight:normal;}" +
+			".comhead span {color:#bbb;}" +
+			"span.comment, span.comment font[color] {" +
+			"  color:#222 !important;" +
+			"  line-height:1.2em;" +
+			"} " +
+			"input[type=submit] {" +
+			"  color:#fff !important;" +
+			"  border:none;" +
+			"  background:#f60 -moz-linear-gradient(bottom, #f60, #f72); " +			
+			"  background:#f60 -webkit-gradient(linear, left bottom, left top,"+
+			"			 from(#f60), to(#f72));" +
+			"  border-top:#fb8 solid 1px;" +
+			"  border-bottom:#d60 solid 1px;} ";
+			
 		this.append_stylesheet(style);
 	};
  
